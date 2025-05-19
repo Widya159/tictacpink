@@ -1,0 +1,59 @@
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to right, #ffc0cb, #ffe6eb);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 30px;
+    }
+    h1 {
+      color: #ff69b4;
+      text-shadow: 2px 2px white;
+    }
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .cell {
+      width: 100px;
+      height: 100px;
+      background-color: #fff0f5;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #ff69b4;
+      font-size: 2.5rem;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .cell:hover {
+      transform: scale(1.1);
+      background-color: #ffe6f2;
+    }
+    .status, .mode-select {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #d63384;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ff69b4;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff1493;
+    }
+    select {
+      padding: 5px 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
